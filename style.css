@@ -1,0 +1,41 @@
+:root{
+    --body-background-color: hsl(210, 46%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: var(--body-background-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#card-image{
+    background-image: url('images/drawers.jpg');
+}
+
+img#avatar{
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+}
+
+#card-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
