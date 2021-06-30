@@ -82,19 +82,11 @@ p#date{
 
 #card-text{
     padding: 3em 4em;
+    padding-right: 4.5em; /* needed for readjustment with the bubble */
     background-color: #fff;
     border-top-right-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
 }
-
-
-#card-footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* justify-content: space-between; */
-    /* align-content: center; */
-}
-
 
 #avatar-card{
     grid-column-start: 1;
@@ -107,13 +99,10 @@ p#date{
 }
 
 img#avatar{
-    height: 60px;
+    height: 55px;
     width: auto;
     border-radius: 50%;
     margin-right: 1em;
-    
-    /* grid-column-start: 2;
-    grid-column-end: 3; */
 }
 
 #avatar-text{
@@ -123,12 +112,9 @@ img#avatar{
 
 h4{
     font-size: 1.2em;
-    /* grid-column-start: 1; */
 }
 p#date{
     font-size: 1.1em;
-    /* grid-column-start: 2; */
-
 }
 
 #share-container{
@@ -142,22 +128,27 @@ p#date{
     align-content: end;
 }
 
-#share-icon-container{
+button{
     background-color: var(--body-background-color);
     height: 50px;
     width: 50px;
-    display: grid;
-    justify-content: center;
-    align-content: center;
     border-radius: 50%;
+
+    border: none;
+    background-image: url('images/icon-share.svg');
+    background-repeat: no-repeat;
+    background-size: 1.8em;
+    background-position: center;
 
     justify-self: end;
     align-self: end;
+
+    cursor: pointer;
 }
 
-img#share-icon{
-    height: 20px;
-    width: auto;
+button:hover{
+    background-color: var(--para-color);
+    background-image: url('images/icon-share-active.svg');
 }
 
 #bubble-set {
@@ -165,8 +156,7 @@ img#share-icon{
     grid-template-columns: 1fr;
     justify-self: end;
     align-self: end;
-
-    /* margin-right: -50px; */
+    margin-bottom: 1.5em;
 }
 
 #bubble-box {
@@ -177,26 +167,22 @@ img#share-icon{
     margin: 0 auto;
     width: 0; 
     height: 0; 
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
     
-    border-top: 20px solid var(--header-color);
+    border-top: 15px solid var(--header-color);
 }
 
 ul {
     border-radius: var(--border-radius);
     display: flex;
     justify-content: space-between;
-    padding: 1.5em 2em;
+    padding: 1.5em 3em;
     list-style: none;
     color: var(--date-color);
     background-color: var(--header-color);
-    width: 15vw;
+    width: 20em;
 
-}
-
-img.share-icon{
-    background-color: var(--header-color);
 }
 
 @media screen and (max-width: 1050px){
