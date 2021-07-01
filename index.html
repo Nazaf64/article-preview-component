@@ -15,7 +15,8 @@
 
 
 </head>
-<body>
+<body onresize=onResize()>
+  
     <main>
 
         <div id="card-image"></div>
@@ -36,7 +37,7 @@
             </div>
 
             <div class="grid-cell" id="share-container">   
-                <div id="bubble-set">
+                <div id="bubble-set" class="bubble">
                         <div id="bubble-box">
                             <ul id="share-list">
                                 <li>S H A R E</li>
@@ -50,7 +51,7 @@
 
                 </div>
 
-                <button id="share-icon-container"></button> 
+                <button id="share-icon-container"  onclick=onClick()></button> 
                 
             </div>
         
