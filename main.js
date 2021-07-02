@@ -34,12 +34,24 @@ var bubbleSet = document.getElementById("bubble-set");
 
 var shareButton = document.getElementById("share-icon-container");
 
+var mobileShareButton = document.getElementById("share-container");
+
 
 function onClick() {
-    if(bubbleSet.className == 'bubble'){
-        bubbleSet.className = 'bubble-toggle';
-    } else if(bubbleSet.className == 'bubble-toggle'){
-        bubbleSet.className = 'bubble';
-    }
+    let windowWidth = window.innerWidth;
+
+    if (windowWidth > 1000){
+        if(bubbleSet.className == 'bubble'){
+            bubbleSet.className = 'bubble-toggle';
+        } else if(bubbleSet.className == 'bubble-toggle'){
+            bubbleSet.className = 'bubble';
+        }
+     } else if(windowWidth <= 1000){
+        if(mobileShareButton.className == 'share-clicked'){
+            mobileShareButton.className = 'share-clicked-toggle'
+        } else if(mobileShareButton.className == 'share-clicked-toggle'){
+            mobileShareButton.className = 'share-clicked'
+        }
+    }   
 }
 
