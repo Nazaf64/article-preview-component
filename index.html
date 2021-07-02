@@ -15,45 +15,55 @@
 
 
 </head>
-<body onresize=onResize()>
+<body onresize=onResize() onload=onResize()>
   
     <main>
 
         <div id="card-image"></div>
         <div id="card-text" class="grid-container">
-            <h1> Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+            <div class="text">
+
+                <h1> Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
         
-            <p id="description">Ever been in a room and felt like something was missing? Perhaps 
-            it felt slightly bare and uninviting. I’ve got some simple tips 
-            to help you make any room feel complete.
-            </p>
+                <p id="description">Ever been in a room and felt like something was missing? Perhaps 
+                it felt slightly bare and uninviting. I’ve got some simple tips 
+                to help you make any room feel complete.
+                </p>
 
-            <div class="grid-cell" id="avatar-card">
-                <img id="avatar" src="images/avatar-michelle.jpg" alt="avatar">
-                <div id="avatar-text">
-                    <h4>Michelle Appleton</h4>
-                    <p id="date">28 Jun 2020</p>
-                </div>
             </div>
+            
+            <!-- <div class="footer"> -->
 
-            <div class="grid-cell" id="share-container">   
-                <div id="bubble-set" class="bubble">
-                        <div id="bubble-box">
-                            <ul id="share-list">
-                                <li>S H A R E</li>
-                                <li class="share-items"><a href="https://www.facebook.com/"><img class="share-icon" src="images/icon-facebook.svg" alt="facebook-icon"></a></li>
-                                <li class="share-items"><a href="https://twitter.com/"><img class="share-icon" src="images/icon-twitter.svg" alt="twitter-icon"></a></li>
-                                <li class="share-items"><a href="https://www.pinterest.com/"><img class="share-icon" src="images/icon-pinterest.svg" alt="pinterest-icon"></a></li>
-                            </ul>
-                        </div>
+                <div id="avatar-card">
+                    <img id="avatar" src="images/avatar-michelle.jpg" alt="avatar">
+                    <div id="avatar-text">
+                        <h4>Michelle Appleton</h4>
+                        <p id="date">28 Jun 2020</p>
+                    </div>
+                </div>
     
-                        <div id="arrow-down"></div>          
-
+                <div class="share-clicked" id="share-container">   
+                    <div id="bubble-set" class="bubble">
+                            <div id="bubble-box">
+                                <ul id="share-list">
+                                    <li>S H A R E</li>
+                                    <li class="share-items"><a href="https://www.facebook.com/"><img class="share-icon" src="images/icon-facebook.svg" alt="facebook-icon"></a></li>
+                                    <li class="share-items"><a href="https://twitter.com/"><img class="share-icon" src="images/icon-twitter.svg" alt="twitter-icon"></a></li>
+                                    <li class="share-items"><a href="https://www.pinterest.com/"><img class="share-icon" src="images/icon-pinterest.svg" alt="pinterest-icon"></a></li>
+                                </ul>
+                            </div>
+        
+                            <div id="arrow-down"></div>          
+    
+                    </div>
+    
+                    <button id="share-icon-container"  onclick=onClick()></button> 
+                    
                 </div>
 
-                <button id="share-icon-container"  onclick=onClick()></button> 
-                
-            </div>
+            <!-- </div> -->
+
+            
         
         </div>
     

@@ -4,8 +4,8 @@ function onResize(){
     let bubble = document.getElementById('bubble-set');
     let share = document.getElementById('share-icon-container');
 
-
-    if (window.innerWidth > 1000){
+    let windowWidth = window.innerWidth;
+    if (windowWidth > 1000){
     
         // Bubble margin adjust
         let bubble_width = bubble.offsetWidth;
@@ -22,10 +22,9 @@ function onResize(){
         let share_number = `${share_adjust}px`;
     
         share.style.marginRight = share_number;
-    } else if(window.innerWidth <= 1000){
+    } else if(windowWidth <= 1000){
         bubble.style.marginRight = 0;
         share.style.marginRight = 0;
-
     }
 }
 
