@@ -52,6 +52,13 @@ function onClick() {
         } else if(mobileShareButton.className == 'share-clicked-toggle'){
             mobileShareButton.className = 'share-clicked'
         }
+
+
+        if(bubbleSet.id == 'bubble-set'){
+            bubbleSet.id = 'bubble-set-toggle';
+        } else if(bubbleSet.id == 'bubble-set-toggle'){
+            bubbleSet.id = 'bubble-set';        
+        }
     }   
 }
 
