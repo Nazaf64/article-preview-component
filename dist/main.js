@@ -1,4 +1,4 @@
-console.log(window.innerWidth);
+document.getElementById("share-icon-container").innerText = "";
 
 function onResize(){
     let bubble = document.getElementById('bubble-set');
